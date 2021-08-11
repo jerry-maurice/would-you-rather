@@ -1,0 +1,31 @@
+/*Login*/
+#login{
+    width: 400px;
+    margin: 10px auto;
+    padding:10px;
+    height: 200px;
+    border:1px solid black;
+    border-radius: 10px;
+  }
+  #login{
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  }
+  
+  #login{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #login select{
+    width: 300px;
+    margin: 0 auto;
+    height: 30px;
+    font-size: 16px;
+  }
+  
+  #login select option{
+    font-size: 16px;
+    color: red;
+  }
