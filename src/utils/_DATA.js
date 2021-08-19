@@ -146,6 +146,18 @@ let users = {
       }
     }
   }
+
+  function formatUser ({ nickname, name, picture }) {
+    return {
+      id: nickname,
+      name: name,
+      avatarURL: picture,
+      answers:{
+
+      },
+      questions:[]
+    }
+  }
   
   export function _saveQuestion (question) {
     return new Promise((res, rej) => {
@@ -157,7 +169,7 @@ let users = {
           ...questions,
           [formattedQuestion.id]: formattedQuestion
         }
-        
+        console.log(authedUser)
         users = {
           ...users,
           [authedUser]: {
@@ -201,3 +213,18 @@ let users = {
     })
   }
   
+  export function _saveUser (user) {
+    return new Promise((res, rej) => {
+      const formattedUser = formatUser(user);
+      console.log(users)
+      setTimeout(() => {
+        users = {
+          ...users,
+          [formattedUser.id]: formattedUser
+        }
+
+        res(formattedUser)
+      }, 1000)
+    })
+  }
+

@@ -1,21 +1,20 @@
 /*Login*/
 #login{
     width: 400px;
-    margin: 10px auto;
+    margin: 30px auto;
     padding:10px;
     height: 200px;
-    border:1px solid black;
     border-radius: 10px;
+    background-color: navy;
   }
   #login{
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0 5px 10px rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.2);
   }
   
   #login{
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
   }
   
   #login select{
@@ -29,3 +28,10 @@
     font-size: 16px;
     color: red;
   }
+.big-text-title{
+  font-size: 30px;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-align: center;
+  margin: 5px auto 5px;
+  text-transform: uppercase;
+}

@@ -6,6 +6,7 @@ import {createStore} from 'redux'
 import {Provider} from 'react-redux'
 import reducer from './reducers'
 import middleware from './middleware'
+import { Auth0Provider } from "@auth0/auth0-react";
 
 import reportWebVitals from './reportWebVitals';
 
@@ -13,7 +14,13 @@ const store = createStore(reducer, middleware)
 
 ReactDOM.render(
   <Provider store={store}>
-    <App />
+    <Auth0Provider
+      domain="would-you-rather.us.auth0.com"
+      clientId="f3U4i1GKbbjgHub67NdC9u3bWMiROgye"
+      redirectUri={window.location.origin}
+    >
+      <App />
+    </Auth0Provider>
   </Provider>,
   document.getElementById('root')
 );

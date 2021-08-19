@@ -1,0 +1,17 @@
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 10px;
+  }
+
+  .nav-link{
+      text-decoration: none;
+      color: #FFA500;
+      padding: 10px;
+  }
+  
+  .nav-link:hover{
+      background-color: #FFA500;
+      color: cornsilk;
+  }
